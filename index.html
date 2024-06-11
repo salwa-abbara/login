@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ... bootstrap css ... -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ... fontawsome css ... -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ... style css ... -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Assignment4-js/signin</title>
+</head>
+<body class="bg  vh-100 ">
+   
+
+    <div class="signin d-flex justify-content-start align-items-center">  
+            <div class="signin-content bg-white my-5 w-50 ms-4 p-5 rounded shadow-lg">
+                <h1 class="red text-center">Smart Login System</h1>
+                <input id="signinEmail" type="text" class="form-control my-3" placeholder="Enter your email">
+                <input id="signinPassword" type="password" class="form-control my-3" placeholder="Enter your password">
+                <p id="alert" class="text-center"></p>
+    
+                <button id="login" onclick="login()" class="btn  w-100 my-3"><a>Login</a></button>
+                <p class=" red text-center">Don’t have an account? <a class="black" href="./sginup.html">Sign Up</a></p>
+            </div>
+       
+
+    </div>
+    <span id="username" class="d-none"></span>
+
+    
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>  
+    
+</body>
+</html>

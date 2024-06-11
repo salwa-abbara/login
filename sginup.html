@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ... bootstrap css ... -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ... fontawsome css ... -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ... style css ... -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Assignment4-js/signup</title>
+</head>
+<body class=" bg vh-100 ">
+    <span id="username" class="d-none"></span>
+   <div class="sginup d-flex justify-content-start align-items-center">
+        <div class="signup-content bg-white my-5 w-50 ms-4  p-4 rounded shadow-lg">
+            <h1 class="red text-center">Smart Login System</h1>
+
+            <input id="signupName" class="form-control my-2" placeholder="Enter your name" type="text" >
+            <input id="signupEmail" class="form-control validEmail my-2" placeholder="Enter your email" type="email" >
+            <span class="valid font-small d-none">* Plase Enter Valid Email</span>
+            <input id="signupPassword" class="form-control validPass my-2" placeholder="Enter  password" type="password">
+            <p class="font-small">* Password Should Start with Capital Letter Then At Least 7 Charctars </p>
+            <p id="alert2" class="text-center"></p>
+            <button id="signup" onclick="signUp()" class="btn btn-outline-info w-100 my-1" > <a>Sign Up</a></button>
+            <p class="red text-center">You have an account? <a class="black" href="./index.html">Signin</a></p>
+        </div>
+    
+   </div>
+   
+   <!-- ... bootstrap js ... -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>  
+</body>
+</html>
